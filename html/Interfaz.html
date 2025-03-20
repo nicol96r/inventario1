@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"> 
+    
+</head> 
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <div class="container-fluid">
+              <a class="navbar-brand text-center">
+                  Admin Panel
+              </a>
+              <div class="navbar-nav me-auto">
+                <!-- Proveedor -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Proveedor
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Agregar Proveedor</a></li>
+                        <li><a class="dropdown-item" href="ListaProveedor.html">Lista Proveedor</a></li>
+                    </ul>
+                </li>
+
+                <!-- Categorías -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Categorías
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalAgregarCategoria">Agregar Categoría</a></li>
+                        <li><a class="dropdown-item" href="ListaCategorias.html">Lista de Categorías</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalAgregarProductos">Agregar Productos</a></li>
+                        <li><a class="dropdown-item" href="ListaProductos.html">Lista de Categorías</a></li>
+                    </ul>
+                </li>
+            
+
+                <div class="modal fade" id="modalAgregarProveedor">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Agregar Proveedor</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                  asdfgajhgfd
+                                </p>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                
+                
+                </div>
+  
+                <div class="modal fade" id="modalAgregarCategoria">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Agregar Categoría</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                  <h1>Nombre de la categoría</h1>
+                                </p>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+  <div class="modal fade" id="modalAgregarProductos">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Agregar Productos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                
+                        <div class="contenedor">
+                            <h1>Agregar producto</h1>
+                            <form id="agregar-producto-formulario">
+                                <label for="nombre-producto">Nombre del producto:</label>
+                                <input type="text" id="nombre-producto" name="nombre-producto"><br><br>
+                                
+                                <label for="imagen-producto">Imagen del producto:</label>
+                                <input type="file" id="imagen-producto" name="imagen-producto"><br><br>
+                    
+                                <label for="descripcion-producto">Descripción del producto:</label>
+                                <textarea id="descripcion-producto" name="descripcion-producto"></textarea><br><br>
+                                
+                                <label for="precio-producto">Precio:</label>
+                                <input type="number" id="precio-producto" name="precio-producto"><br><br>
+                                
+                                <label for="cantidad-producto">Cantidad:</label>
+                                <input type="number" id="cantidad-producto" name="cantidad-producto"><br><br>
+                                
+                    
+                                <label for="estado-producto">Estado del producto:</label>
+                                <input type="text" id="estado-producto" name="estado-producto"><br><br>
+                    
+                    
+                                <label for="fecha_ingreso-producto">Fecha ingreso:</label>
+                                <input type="date" id="fecha_ingreso-producto" name="fecha_ingreso-producto"><br><br>
+                    
+                                <label for="categoria-producto">Categoría del producto:</label>
+                                <select id="categoria-producto" name="categoria-producto">
+                                    <option value="">Seleccione una categoría</option>
+                                </select><br><br>
+                                <label for="proveedor-producto">Proveedor del producto:</label>
+                                <select id="proveedor-producto" name="proveedor-producto">
+                                    <option value="">Seleccione un proveedor</option>
+                                 
+                                </select><br><br>
+                                
+                                <button id="btn-agregar-producto">Agregar producto</button>
+                            </form>
+                        </div>
+                </p>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+</div>
+ <!-- Botón de perfil -->
+ <div class="dropdown ms-auto">
+    <button class="btn btn-secondary dropdown-toggle text-info bg-light border-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Ver perfil
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalVerDatos">Ver datos</a></li>
+        <li><a class="dropdown-item" href="login.html" >Cerrar sesion</a></li>
+    </ul>
+  </div>
+  
+  <div class="modal fade" id="modalVerDatos">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ver datos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <div class="contenedor">
+                        <h1>Información Personal</h1>
+                        <form id="agregar-usuario">
+                            <label for="nombre-producto">Nombre del Usuario:</label>
+                            <input type="text" id="nombre-usuario" name="nombre-usuario"><br><br>
+                            
+                            <label for="nombre-producto">Correo electronico:</label>
+                            <input type="email" id="nombre-usuario" name="nombre-usuario"><br><br>
+                            
+                            <label for="nombre-producto">Usuario:</label>
+                            <input type="email" id="nombre-usuario" name="nombre-usuario"><br><br>
+                
+                            <label for="nombre-producto">Rol de usuario:</label>
+                            <input type="" id="nombre-usuario" name="nombre-usuario"><br><br>
+                </p>
+                        </p>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</nav>
+
+<div class="container mt-5">
+<h1 class="text-center">Mi Carrusel de Imágenes</h1>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="../img1.png" class="d-block w-100" alt="Imagen 1">
+      </div>
+      <div class="carousel-item">
+          <img src="../imagenes/img2.png" class="d-block w-100" alt="Imagen 2">
+      </div>
+      <div class="carousel-item">
+          <img src="../imagenes/img3.png" class="d-block w-100" alt="Imagen 3">
+      </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+</div>
+
+<div class="container mt-5">
+<h1>Inventario</h1>
+
+<section>
+  <h2>Bienvenidos</h2>
+</section>
+
+
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card">
+              <img src="../imagenes/imgn.png" class="card-img-top" alt="Tarjeta">
+              <div class="card-body">
+                  <h5 class="card-title">Mi tarjeta</h5>
+                  <p class="card-text">Ver más información sobre esto</p>
+                  <a href="#" class="btn btn-primary">Ver más</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

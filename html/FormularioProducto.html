@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de producto</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Agregar producto</h1>
+        <form id="agregar-producto-formulario">
+            <label for="nombre-producto">Nombre del producto:</label>
+            <input type="text" id="nombre-producto" name="nombre-producto"><br><br>
+            
+            <label for="imagen-producto">Imagen del producto:</label>
+            <input type="file" id="imagen-producto" name="imagen-producto"><br><br>
+
+            <label for="descripcion-producto">Descripción del producto:</label>
+            <textarea id="descripcion-producto" name="descripcion-producto"></textarea><br><br>
+            
+            <label for="precio-producto">Precio:</label>
+            <input type="number" id="precio-producto" name="precio-producto"><br><br>
+            
+            <label for="cantidad-producto">Cantidad:</label>
+            <input type="number" id="cantidad-producto" name="cantidad-producto"><br><br>
+            
+
+            <label for="estado-producto">Imagen del producto:</label>
+            <input type="file" id="estado-producto" name="imagen-producto"><br><br>
+
+
+            <label for="fecha_ingreso-producto">Imagen del producto:</label>
+            <input type="date" id="fecha_ingreso-producto" name="imagen-producto"><br><br>
+
+            <label for="categoria-producto">Categoría del producto:</label>
+            <select id="categoria-producto" name="categoria-producto">
+                <option value="">Seleccione una categoría</option>
+            </select><br><br>
+            <label for="proveedor-producto">Proveedor del producto:</label>
+            <select id="proveedor-producto" name="proveedor-producto">
+                <option value="">Seleccione un proveedor</option>
+             
+            </select><br><br>
+            
+            <button id="btn-agregar-producto">Agregar producto</button>
+        </form>
+    </div>
+</body>
+</html>

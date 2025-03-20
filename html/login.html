@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form onsubmit="verificarLogin(); return false;">
+            <input type="text" id="username" placeholder="Correo" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    
+    <!-- Formulario de Registro -->
+    <div class="registro-container">
+        <h2>Registrar Usuario</h2>
+        <form onsubmit="return registrarUsuario()">
+            <input type="text" id="registrousuario" placeholder="Nombre" required>
+            <input type="email" id="registroEmail" placeholder="Correo electrónico" required>
+            <input type="password" id="registroContraseña" placeholder="Contraseña" required>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+</body>
+</html>

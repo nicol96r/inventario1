@@ -1,0 +1,83 @@
+/* Estilos personalizados */
+       body {
+            font-family: sans-serif;
+            padding-top: 80px;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .carousel-inner img {
+            height: 500px; /* Ajusta la altura del carrusel según tus necesidades */
+            object-fit: cover; /* Para que la imagen cubra todo el contenedor */
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para el dropdown */
+        .dropdown {
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para el select */
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para la navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-nav .dropdown-menu {
+            background-color: white;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .navbar-nav .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+        .nav-item {
+            list-style: none;
+        }
+
+        .dropdown-menu {
+            margin-top: 0.5rem;
+        }
+
+        .navbar-brand {
+            color: #55be8a !important; /* Dorado más brillante */
+        }
+        /* O si prefieres un amarillo más específico, puedes usar: */
+        .texto-amarillo {
+            color: #55be8a !important; /* Amarillo Material Design */
+        }
